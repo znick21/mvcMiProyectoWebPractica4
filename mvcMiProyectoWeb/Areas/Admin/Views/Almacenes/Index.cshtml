@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Lista de Almacenes";
+}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-8">
+            <h2 class="text-primary">Lista de Almacenes</h2>
+        </div>
+        <div class="col-4 text-right">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i>Crear Nuevo Almacen
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <table id="tblAlmacenes" class="table table-striped table-bordered" style="width: 100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Almacen</th>
+                <th>Direccion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+    </table>
+
+</div>
+
+@section Scripts{
+    <script src="~/js/almacen.js"></script>
+}
